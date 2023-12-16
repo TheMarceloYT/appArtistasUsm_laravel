@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\CuentasController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImagenesController;
@@ -36,4 +37,6 @@ Route::get('/nuevo', [CuentasController::class, 'nuevaVista'])->name('cuentas.nu
 Route::post('/nuevo/crear', [CuentasController::class, 'nueva'])->name('cuentas.nueva');
 
 //admin
-
+Route::middleware('admin')->get('/admin', [AdminController::class, 'listar'])->name('admin.listar');
+Route::middleware('admin')->delete('/admin/borrar/{cuenta}', [AdminController::class, 'borrar'])->name('admin.borrar');
+Route::middleware('admin')->put('/admin/restaurar/{cuenta}', [AdminController::class, 'restaurar'])->name('admin.restaurar');

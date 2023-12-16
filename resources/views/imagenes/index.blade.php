@@ -54,7 +54,7 @@
               <img src={{asset('bootstrap_icons/chat-left-fill.svg')}}>
               <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill 
                 bg-danger">{{count($img->comentario)}}</span> 
-            </a>
+            </a> 
           </div>
         </div>
       </div>

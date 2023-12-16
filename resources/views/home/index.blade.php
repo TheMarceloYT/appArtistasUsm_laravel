@@ -16,46 +16,45 @@
         <h3 class="text-black me-2">Ver todo</h3>
         <!-- icono -->
         <img src={{asset('bootstrap_icons/arrow-right-circle-fill.svg')}}>
-      </div>
+      </div> 
     </a>
   </div>
 </div>
 <!-- noticias contenido -->
-<div class="card-group mt-3">
+<div class="row g-0 card-group mt-3 align-items-center justify-content-center">
   <!-- 1 -->
   <div class="card" style="width: 17rem;">
     <img src={{asset('images/noticias/n1.png')}} class="card-img-top">
   </div>
   <!-- 2 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n2.png')}} class="card-img-top">
   </div>
   <!-- 3 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n3.png')}} class="card-img-top">
   </div> 
   <!-- 4 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n4.png')}} class="card-img-top">
   </div>
-
 </div>
 <!-- noticias contenido 2 -->
-<div class="card-group mt-3">
+<div class="row g-0 card-group mt-3 align-items-center justify-content-center">
   <!-- 5 -->
   <div class="card" style="width: 17rem;">
     <img src={{asset('images/noticias/n5.png')}} class="card-img-top">
   </div>
   <!-- 6 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n6.png')}} class="card-img-top">
   </div>
   <!-- 7 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n7.png')}} class="card-img-top">
   </div>
   <!-- 8 -->
-  <div class="card ms-2" style="width: 17rem;">
+  <div class="card ms-lg-2" style="width: 17rem;">
     <img src={{asset('images/noticias/n8.png')}} class="card-img-top">
   </div>
 </div>

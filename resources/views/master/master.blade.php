@@ -60,6 +60,9 @@
                 CONFIGURACIÓN
               </a>
               <ul class="dropdown-menu bg-primary border-warning text-center">
+                @if(Gate::allows('usuarios_listar'))
+                  <li><a class="dropdown-item text-white fw-bold rounded" id="item-dropdown" href={{Route('admin.listar')}}>Listar usuarios</a></li>
+                @endif
                 <li><a class="dropdown-item text-white fw-bold rounded" 
                   href="/" id="item-dropdown">Comentar experiencia</a></li>
                 <li><hr class="dropdown-divider bg-white"></li>

@@ -16,7 +16,7 @@ class Cuenta extends Authenticable
     protected $table = 'cuentas';
     protected $primaryKey = 'user';
     protected $keyType = 'string';
-    public $incrementing = false;
+    public $incrementing = false; 
     public $timestamps = false;
 
     //un user pertenece a un rol 
