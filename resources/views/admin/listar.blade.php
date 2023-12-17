@@ -86,7 +86,7 @@
                 <img src={{asset('bootstrap_icons/check2-circle.svg')}}>
               </button>
             {{-- btn modificar --}}
-            <a class="btn bg-warning border rounded p-1 ms-1 {{$btnAdminModificar}}" title="MODIFICAR CUENTA" href="">
+            <a class="btn bg-warning border rounded p-1 ms-1 {{$btnAdminModificar}}" title="MODIFICAR CUENTA" href={{Route('admin.modificarVista', $c->user)}}>
               <img src={{asset('bootstrap_icons/gear-fill.svg')}}>
             </a>
           </td>

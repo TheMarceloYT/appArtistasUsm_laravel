@@ -33,5 +33,15 @@ class AuthServiceProvider extends ServiceProvider
             
             return $usuario->id_rol == $id;
         });
+
+        //crear usuario
+        Gate::define('usuarios_crear', function($usuario){
+            //busco el id del admin
+            $rol = Rol::where('nombre', 'Administrador')->get('id');
+            $rol = json_decode($rol, true);
+            $id = $rol[0]['id'];
+            
+            return $usuario->id_rol == $id;
+        });
     }
 }
