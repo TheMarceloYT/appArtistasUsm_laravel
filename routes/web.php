@@ -38,5 +38,5 @@ Route::post('/nuevo/crear', [CuentasController::class, 'nueva'])->name('cuentas.
 
 //admin
 Route::middleware('admin')->get('/admin', [AdminController::class, 'listar'])->name('admin.listar');
-Route::middleware('admin')->delete('/admin/borrar/{cuenta}', [AdminController::class, 'borrar'])->name('admin.borrar');
+Route::middleware('admin')->delete('/admin/borrar/{cuenta}', [AdminController::class, 'borrar'])->name('admin.borrar'); 
 Route::middleware('admin')->put('/admin/restaurar/{cuenta}', [AdminController::class, 'restaurar'])->name('admin.restaurar');

@@ -17,7 +17,7 @@
           <th scope="col" class="bg-primary text-white fw-bold">OPCIONES</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody> 
         @foreach($cuentas as $num => $c)
         {{-- procesos php --}}
         @php
@@ -81,7 +81,7 @@
             <button type="button" class="btn btn-danger border rounded p-1 {{$btnBorrado.' '.$btnAdmin}}" title="BORRAR CUENTA" data-bs-toggle="modal" data-bs-target="#BorradoModal{{$c->user}}">
               <img src={{asset('bootstrap_icons/trash-fill.svg')}}>
             </button>
-            {{-- btn restaurar --}}        
+            {{-- btn restaurar --}}   
             <button type="button" class="btn btn-success border rounded p-1 ms-1 {{$btnRestaurar.' '.$btnAdminRestaurar}}" title="RESTAURAR CUENTA" data-bs-toggle="modal" data-bs-target="#RestauradoModal{{$c->user}}">
                 <img src={{asset('bootstrap_icons/check2-circle.svg')}}>
               </button>
@@ -119,7 +119,7 @@
   </div>
 </div>
 
-<!-- scripts para el modal 
+<!-- scripts para el modal
 <script>
   const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

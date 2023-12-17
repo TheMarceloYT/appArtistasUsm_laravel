@@ -31,9 +31,11 @@ class AdminController extends Controller
     }
 
     //restaurar cuenta
-    public function restaurar(Cuenta $cuenta)
+    public function restaurar($cuenta)
     {
-        $cuenta->restore();
+        //restauro cuenta
+        Cuenta::where('user', $cuenta)->restore();
+
         return redirect()->route('admin.listar');
     }
 }
