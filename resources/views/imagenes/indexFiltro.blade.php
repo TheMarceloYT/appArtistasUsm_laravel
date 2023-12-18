@@ -30,7 +30,8 @@
 <!-- imagenes -->
 <div class="row d-flex align-items-center justify-content-center pe-lg-4">
   @foreach($imagenesFiltradas as $img)
-    <div class="card bg-white ms-4 mt-4 align-items-center justify-content-center" style="width: 24rem; height: 30rem;">
+    <div class="card bg-white ms-4 mt-4 align-items-center justify-content-center" 
+      style="width: 24rem; height: 30rem;" id="carta_custom">
       <!-- imagen -->
       <img style="width: 24rem; height: 15rem;" src={{asset('storage/'.$img->imagen)}} class="card-img-top">
       <div class="card-body text-center">

@@ -38,13 +38,13 @@
           <img src="{{asset('images/usm_logo.png')}}" height="50">
         </a>
         <!-- toggler hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" 
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
           aria-expanded="false" aria-label="Toggle navigation">
           <img src={{asset('images/navbar_toggler.png')}} height="35" width="35">
         </button>
         <!-- opciones -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="transition: ease 400ms;">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active fs-4 text-white fw-bold text-center {{$fondo_naranjo_inicio}}"
@@ -59,7 +59,7 @@
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 CONFIGURACIÓN
               </a>
-              <ul class="dropdown-menu bg-primary border-warning text-center">
+              <ul class="dropdown-menu bg-primary border-warning text-center" style="transition: ease 400ms;">
                 @if(Gate::allows('usuarios_listar'))
                   <li><a class="dropdown-item text-white fw-bold rounded" id="item-dropdown" href={{Route('admin.listar')}}>Listar usuarios</a></li>
                 @endif

@@ -82,7 +82,7 @@
         @if($com->user_fk == $c->user)
           <div class="row mt-2">
             <div class="col-lg-2"></div>
-            <div class="col-lg-8 card border border-warning bg-white">
+            <div class="col-lg-8 card border border-warning bg-white" id="carta_custom">
               {{-- imagen del user --}}
               <div class="d-flex">
                 <div style="width: 5rem;">
